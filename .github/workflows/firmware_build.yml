@@ -23,6 +23,6 @@ jobs:
         run: sudo apt install -y gcc-arm-none-eabi
 
       - name: build firmware...
-        run: make
+        run: make canable
         env:
           MCU_SERIES: "F072"
