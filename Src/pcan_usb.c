@@ -200,8 +200,8 @@ static uint8_t  device_setup( USBD_HandleTypeDef *pdev, USBD_SetupReqTypedef *re
         case 0: /* bootloader info */
         {
           static const uint8_t bootloader_info[] = { 
-                                  0x00, 0x00, 0x08, 0x04, 0x00, 0x08, 0x07, 0x00,
-                                  0x04, 0x02, 0xe0, 0x07, 0x01, 0x00, 0x00, 0x00
+                                    0x00, 0x00, 0x08, 0x04, 0x00, 0x08, 0x07, 0x00,
+                                    0x04, 0x02, 0xe0, 0x07, 0x01, 0x00, 0x00, 0x00
                                 };
           USBD_CtlSendData( pdev, (void*)bootloader_info, sizeof( bootloader_info ) );
 
