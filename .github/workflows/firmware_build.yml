@@ -12,6 +12,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+        env:
+          FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
 
       #- name: arm-none-eabi-gcc
       #  uses: fiam/arm-none-eabi-gcc@v1
