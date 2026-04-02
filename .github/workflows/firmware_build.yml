@@ -20,7 +20,7 @@ jobs:
       #  with:
       #    release: '10-2020-q4'
       - name: install toolchain...
-        run: sudo apt install -y gcc-arm-none-eabi
+        run: sudo apt install -y gcc-arm-none-eabi dfu-util
 
       - name: build firmware...
         run: make canable
