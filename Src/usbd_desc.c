@@ -1,7 +1,7 @@
 #include "usbd_core.h"
 #include "usbd_conf.h"
 
-#define USBD_VID                    0x0483
+#define USBD_VID                    0x0C72
 #define USBD_PID_FS                 0x000C   
 #define USBD_LANGID_STRING          1033
 #define USBD_MAX_STR_DESC_SIZ       0x100U
@@ -75,7 +75,7 @@ uint8_t * USBD_FS_ConfigStrDescriptor(USBD_SpeedTypeDef speed, uint16_t *length)
   __ALIGN_BEGIN static const uint16_t cfg_descriptor[1+8] __ALIGN_END = 
   { 
     0x0312, 
-    'X','C','A','N','-','U','S','B' 
+    'P','C','A','N','-','U','S','B' 
   };
   *length = sizeof( cfg_descriptor );
   return (uint8_t*)cfg_descriptor;
