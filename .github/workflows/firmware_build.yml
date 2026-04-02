@@ -23,7 +23,7 @@ jobs:
         run: sudo apt install -y gcc-arm-none-eabi dfu-util
 
       - name: build firmware...
-        run: make canable
+        run: make
         env:
           MCU_SERIES: "F072"
           
